@@ -1,8 +1,0 @@
-/*This is going to contain your import statements
-All files prefixed with _ are partials: meaning their CSS isn't compiled unless it's imported into an unprefixed .SCSS file.*/
-
-@import "base";
-@import "mixins";
-
-//Component Rules
-@import "components/main";
