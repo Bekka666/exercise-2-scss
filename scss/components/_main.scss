@@ -23,7 +23,16 @@ ul{
 }*/
 
 html{
+	box-sizing: border-box;
+	-moz-text-size-adjust: $size-adjust;
+	-ms-text-size-adjust: $size-adjust;
+	-webkit-text-size-adjust: $size-adjust;
+	text-size-adjust: $size-adjust;
 	background-image: $background-image;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 .header-section {
@@ -59,7 +68,7 @@ hr {
 }
 
 .js-icon-fade {
-	-webkit-animation: $fade;
+	-webkit-animation: $icon-fade;
 }
 
 @-webkit-keyframes icon-fade {
