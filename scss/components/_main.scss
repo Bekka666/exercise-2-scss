@@ -26,6 +26,12 @@ html{
 	background-image: $background-image;
 }
 
+.header-section {
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	margin-top: 10rem;
+}
+
 h1{
 	font-family: $font;
 	color: $orange;
@@ -33,6 +39,80 @@ h1{
 	text-align: center;
 }
 
+hr {
+	border: 0;
+    height: 2px;
+	width: 75%;
+    background-image: $gradient;
+}
+
 .rotate{
 	@include rotate($degree);
+}
+
+.ease-all{
+	-webkit-transition: $ease;
+	-moz-transition: $ease;
+	-ms-transition: $ease;
+	-o-transition: $ease;
+	transition: $ease;
+}
+
+.js-icon-fade {
+	-webkit-animation: $fade;
+}
+
+@-webkit-keyframes icon-fade {
+	0% {
+		opacity: 0;
+		top: -250px;
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+	}
+}
+
+.social img {
+	width: 100%;
+	display: block;
+}
+.social{
+	background-color: transparent;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+.social ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.social li{
+	display: inline-block;
+}
+
+.social li a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 1rem;
+	-webkit-border-radius: $border-radius;
+	-moz-border-radius: $border-radius;
+	-ms-border-radius: $border-radius;
+	-o-border-radius: $border-radius;
+	border-radius: $border-radius;
+	-webkit-box-shadow: $shadow-from;
+	-moz-box-shadow: $shadow-from;
+	-ms-box-shadow: $shadow-from;
+	-o-box-shadow: $shadow-from;
+	box-shadow: $shadow-from;
+	
+}
+
+.social li a:hover{
+	-webkit-box-shadow: $shadow-to;
+	-moz-box-shadow: $shadow-to;
+	-ms-box-shadow: $shadow-to;
+	-o-box-shadow: $shadow-to;
+	box-shadow: $shadow-to;
 }

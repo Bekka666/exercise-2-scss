@@ -12,9 +12,15 @@
 	}
 }*/
 
-@mixin icon{
+@mixin icon($font, $orange, $ease){
 	font-family: $font;
 	color: $orange;
+	margin: 0 auto 1.5em;
+	display: block;
+	width: 150px;
+	opacity: 0;
+	transition: $ease;
+	position: relative;
 }
 @mixin rotate($degree){
     -webkit-transition-property: -webkit-transform;
