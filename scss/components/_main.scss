@@ -1,0 +1,38 @@
+/*This is our main file for css/sass*/
+
+/*body{
+	background-color: $background;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.primary-btn{
+	@include button($primary, #FFF, $primary-dark);
+}
+
+.secondary-btn{
+	@include button($secondary, #000, $secondary-dark);
+}
+
+.border{
+	border: 1px solid $secondary-dark;
+	p{ color: green;}
+}
+
+ul{
+	@extend .border;
+}*/
+
+html{
+	background-image: $background-image;
+}
+
+h1{
+	font-family: $font;
+	color: $orange;
+	font-size: 2rem; 
+	text-align: center;
+}
+
+.rotate{
+	@include rotate($degree);
+}

@@ -1,0 +1,30 @@
+/*This file contains all of our mixins.*/
+/*@mixin button($bg-color, $color, $hover-color){
+	background-color: $bg-color;
+	border-radius: 3px;
+	padding: .5em 1em;
+	margin: 1em;
+	display: inline-block;
+	text-decoration: none;
+	color: $color;
+	&:hover{
+		background-color: $hover-color;
+	}
+}*/
+
+@mixin icon{
+	font-family: $font;
+	color: $orange;
+}
+@mixin rotate($degree){
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+	&:hover{
+		-webkit-transform: $degree;
+		-moz-transform: $degree; 
+    -o-transform: $degree;
+	}
+}
