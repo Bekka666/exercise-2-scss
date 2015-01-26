@@ -1,1 +1,201 @@
-html{box-sizing:border-box;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;background-image:url(../images/pattern.png)}*,*:before,*:after{box-sizing:inherit}.header-section{padding-top:1.5em;padding-bottom:1.5em;margin-top:10rem}h1{font-family:Gotham,"Helvetica Neue",Helvetica,Arial,sans-serif;color:#FF7600;font-size:2rem;text-align:center}hr{border:0;height:2px;width:75%;background-image:-webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))}.rotate{-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;transition-property:transform;overflow:hidden}.rotate:hover{-webkit-transform:rotate(360deg);-moz-transform:rotate(360deg);-o-transform:rotate(360deg)}.ease-all{-webkit-transition:all 350ms ease-in-out;-moz-transition:all 350ms ease-in-out;-ms-transition:all 350ms ease-in-out;-o-transition:all 350ms ease-in-out;transition:all 350ms ease-in-out}.js-icon-fade{-webkit-animation:icon-fade 800ms linear forwards}@-webkit-keyframes icon-fade{0%{opacity:0;top:-250px}100%{opacity:1;top:0}}.social img{width:100%;display:block}.social{background-color:transparent;text-align:center;padding-top:1.5rem}.social ul{list-style-type:none;margin:0;padding:0}.social li{display:inline-block}.social li a{width:100%;height:100%;display:block;padding:1rem;-webkit-border-radius:50%;-moz-border-radius:50%;-ms-border-radius:50%;-o-border-radius:50%;border-radius:50%;-webkit-box-shadow:inset 0px 0px 0px 40px #000;-moz-box-shadow:inset 0px 0px 0px 40px #000;-ms-box-shadow:inset 0px 0px 0px 40px #000;-o-box-shadow:inset 0px 0px 0px 40px #000;box-shadow:inset 0px 0px 0px 40px #000}.social li a:hover{-webkit-box-shadow:inset 0px 0px 0px 3px #FF7600;-moz-box-shadow:inset 0px 0px 0px 3px #FF7600;-ms-box-shadow:inset 0px 0px 0px 3px #FF7600;-o-box-shadow:inset 0px 0px 0px 3px #FF7600;box-shadow:inset 0px 0px 0px 3px #FF7600}
+/*This is going to contain your import statements
+All files prefixed with _ are partials: meaning their CSS isn't compiled unless it's imported into an unprefixed .SCSS file.*/
+/*This file contains all our variables*/
+/*are placeholders for storing information that you want to reuse throughout your styles.*/
+/*This file contains all of our mixins.*/
+/*@mixin button($bg-color, $color, $hover-color){
+	background-color: $bg-color;
+	border-radius: 3px;
+	padding: .5em 1em;
+	margin: 1em;
+	display: inline-block;
+	text-decoration: none;
+	color: $color;
+	&:hover{
+		background-color: $hover-color;
+	}
+}*/
+/*This is our main file for css/sass*/
+/*body{
+	background-color: $background;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+.primary-btn{
+	@include button($primary, #FFF, $primary-dark);
+}
+
+.secondary-btn{
+	@include button($secondary, #000, $secondary-dark);
+}
+
+.border{
+	border: 1px solid $secondary-dark;
+	p{ color: green;}
+}
+
+ul{
+	@extend .border;
+}*/
+/* line 25, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-image: url(../images/pattern.png); }
+
+/* line 34, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 38, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.header-section {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-top: 10rem; }
+
+/* line 44, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+h1 {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #FF7600;
+  font-size: 2rem;
+  text-align: center; }
+
+/* line 51, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+hr {
+  border: 0;
+  height: 2px;
+  width: 75%; }
+
+/* line 58, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.rotate {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  overflow: hidden; }
+  /* line 31, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/mixins */
+  .rotate:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg); }
+
+/* line 62, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.ease-all {
+  transition: all 350ms ease-in-out; }
+
+/* line 70, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.js-icon-fade {
+  -webkit-animation: icon-fade 800ms linear forwards; }
+
+@-webkit-keyframes icon-fade {
+  /* line 75, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+  0% {
+    opacity: 0;
+    top: -250px; }
+
+  /* line 79, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+  100% {
+    opacity: 1;
+    top: 0; } }
+
+/* line 85, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.social img {
+  width: 100%;
+  display: block; }
+
+/* line 89, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.social {
+  background-color: transparent;
+  text-align: center;
+  padding-top: 1.5rem; }
+
+/* line 94, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.social ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 99, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.social li {
+  display: inline-block; }
+
+/* line 103, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.social li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1rem;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -ms-box-shadow: inset 0px 0px 0px 40px #000;
+  -o-box-shadow: inset 0px 0px 0px 40px #000;
+  box-shadow: inset 0px 0px 0px 40px #000; }
+
+/* line 121, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.social li a:hover {
+  -ms-box-shadow: inset 0px 0px 0px 3px #FF7600;
+  -o-box-shadow: inset 0px 0px 0px 3px #FF7600;
+  box-shadow: inset 0px 0px 0px 3px #FF7600; }
+
+@font-face {
+  font-family: 'my-font';
+  src: url('../font/my-font.eot?51262836');
+  src: url('../font/my-font.eot?51262836#iefix') format('embedded-opentype'), url('../font/my-font.woff?51262836') format('woff'), url('../font/my-font.ttf?51262836') format('truetype'), url('../font/my-font.svg?51262836#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?51262836#fontello') format('svg');
+  }
+}
+*/
+/* line 150, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "my-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  color: #FF7600;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+/* line 182, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.icon-emo-devil:before {
+  content: '\e800'; }
+
+/* line 183, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.icon-cross:before {
+  content: '\e801'; }
+
+/* line 184, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.icon-heart:before {
+  content: '\e802'; }
+
+/* line 185, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.icon-eye:before {
+  content: '\e803'; }
+
+/* line 186, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+.icon-plug:before {
+  content: '\e804'; }
