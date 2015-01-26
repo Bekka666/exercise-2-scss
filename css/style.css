@@ -62,13 +62,7 @@ h1 {
   font-size: 2rem;
   text-align: center; }
 
-/* line 51, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
-hr {
-  border: 0;
-  height: 2px;
-  width: 75%; }
-
-/* line 58, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 52, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .rotate {
   transition-property: -webkit-transform;
   transition-property: transform;
@@ -79,47 +73,47 @@ hr {
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg); }
 
-/* line 62, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 56, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .ease-all {
   transition: all 350ms ease-in-out; }
 
-/* line 70, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 64, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .js-icon-fade {
   -webkit-animation: icon-fade 800ms linear forwards; }
 
 @-webkit-keyframes icon-fade {
-  /* line 75, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+  /* line 69, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
   0% {
     opacity: 0;
     top: -250px; }
 
-  /* line 79, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+  /* line 73, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
   100% {
     opacity: 1;
     top: 0; } }
 
-/* line 85, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 79, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .social img {
   width: 100%;
   display: block; }
 
-/* line 89, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 83, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .social {
   background-color: transparent;
   text-align: center;
   padding-top: 1.5rem; }
 
-/* line 94, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 88, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .social ul {
   list-style-type: none;
   margin: 0;
   padding: 0; }
 
-/* line 99, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 93, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .social li {
   display: inline-block; }
 
-/* line 103, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 97, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .social li a {
   width: 100%;
   height: 100%;
@@ -131,7 +125,7 @@ hr {
   -o-box-shadow: inset 0px 0px 0px 40px #000;
   box-shadow: inset 0px 0px 0px 40px #000; }
 
-/* line 121, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 115, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .social li a:hover {
   -ms-box-shadow: inset 0px 0px 0px 3px #FF7600;
   -o-box-shadow: inset 0px 0px 0px 3px #FF7600;
@@ -154,7 +148,7 @@ hr {
   }
 }
 */
-/* line 150, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 144, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "my-font";
   font-style: normal;
@@ -180,22 +174,22 @@ hr {
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
-/* line 182, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 176, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .icon-emo-devil:before {
   content: '\e800'; }
 
-/* line 183, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 177, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .icon-cross:before {
   content: '\e801'; }
 
-/* line 184, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 178, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .icon-heart:before {
   content: '\e802'; }
 
-/* line 185, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 179, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .icon-eye:before {
   content: '\e803'; }
 
-/* line 186, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
+/* line 180, /Users/rebeccawright/Documents/GD Year 3/Semester 2/Web Dev/exercise-2-scss/scss/components/main */
 .icon-plug:before {
   content: '\e804'; }
